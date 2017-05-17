@@ -7,13 +7,13 @@ all:
 # build_tags=
 build_tags=-tags "cgo_jemalloc"
 
-godeps:
+build-deps:
 	@make --no-print-directory -C vendor/github.com/spinlock/jemalloc-go/
 
-install: godeps
+install: build-deps
 	go install ${build_tags} ./unsafe2
 
-gotest: godeps
+gotest: build-deps
 	go test ${build_tags} ./unsafe2
 
 clean:
