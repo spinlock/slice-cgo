@@ -6,6 +6,7 @@
 $ mkdir -p $GOPATH/src/github.com/spinlock
 $ cd $_
 $ git clone https://github.com/spinlock/slice-go.git
+$ make install
 ```
 
 #### How to use it

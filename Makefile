@@ -8,7 +8,7 @@ godeps:
 	@make --no-print-directory -C vendor/github.com/spinlock/jemalloc-go/
 
 install: godeps
-	go install ./...
+	go install ./unsafe2
 
 clean:
 

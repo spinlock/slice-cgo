@@ -10,5 +10,5 @@ go:
     - 1.6.x
 
 script:
-    - make
+    - make install
     - make gotest
