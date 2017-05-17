@@ -41,7 +41,7 @@ func main() {
 
 ```bash
 $ go run main.go
-cgo_slice
+cgo_slice:default
 hello
 h
 e
@@ -49,4 +49,15 @@ l
 l
 o
 ifmmp
+
+$ go run -tags "cgo_jemalloc" main.go
+cgo_slice:jemalloc
+hello
+h
+e
+l
+l
+o
+ifmmp
+
 ```
