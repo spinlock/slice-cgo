@@ -1,5 +1,5 @@
-# slice-cgo
-[![Build Status](https://travis-ci.org/spinlock/slice-cgo.svg)](https://travis-ci.org/spinlock/slice-cgo)
+# slice-go
+[![Build Status](https://travis-ci.org/spinlock/slice-go.svg)](https://travis-ci.org/spinlock/slice-go)
 
 #### How to setup & install
 ```bash
@@ -17,7 +17,7 @@ package main
 import (
     "fmt"
 
-    "github.com/spinlock/slice-cgo/unsafe2"
+    "github.com/spinlock/slice-go/unsafe2"
 )
 
 func init() {
