@@ -13,7 +13,4 @@ distclean: clean
 	@make --no-print-directory --quiet -C vendor/github.com/spinlock/jemalloc-go/ distclean
 
 gotest: godeps
-	go test ./...
-
-gobench: godeps
-	go test -gcflags -l -bench=. -v ./...
+	go test ./unsafe2
