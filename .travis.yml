@@ -11,4 +11,4 @@ go:
 
 script:
     - make
-    - make test
+    - make gotest
