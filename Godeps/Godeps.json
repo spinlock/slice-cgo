@@ -1,0 +1,15 @@
+{
+	"ImportPath": "github.com/spinlock/slice-cgo",
+	"GoVersion": "go1.8",
+	"GodepVersion": "v79",
+	"Packages": [
+		"./..."
+	],
+	"Deps": [
+		{
+			"ImportPath": "github.com/spinlock/jemalloc-go",
+			"Comment": "4.5.0-2-g2e84521",
+			"Rev": "2e84521acd411768e7b5a9e996d3853b3a53b644"
+		}
+	]
+}
