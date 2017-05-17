@@ -11,7 +11,7 @@ import (
 )
 
 type Slice interface {
-	Type() string
+	Type() SliceType
 
 	Buffer() []byte
 	reclaim()

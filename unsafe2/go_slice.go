@@ -23,8 +23,8 @@ func newGoSliceFrom(parent Slice, buf []byte) Slice {
 	}
 }
 
-func (s *goSlice) Type() string {
-	return "go_slice"
+func (s *goSlice) Type() SliceType {
+	return GoSliceType
 }
 
 func (s *goSlice) Buffer() []byte {
