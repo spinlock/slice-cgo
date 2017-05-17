@@ -17,7 +17,7 @@ func (t SliceType) String() string {
 	case GoSliceType:
 		return "go_slice"
 	case CGoSliceType:
-		return "cgo_slice"
+		return "cgo_slice:" + CGoSliceAllocator
 	}
 	panic("unknown type")
 }

@@ -3,7 +3,7 @@
 //
 // Licensed under the MIT (MIT-LICENSE.txt) license.
 
-// +build !linux
+// +build !cgo_jemalloc
 
 package unsafe2
 
@@ -13,6 +13,8 @@ import "C"
 import (
 	"unsafe"
 )
+
+const CGoSliceAllocator = "default"
 
 func cgo_malloc(n int) unsafe.Pointer {
 	return C.malloc(C.size_t(n))

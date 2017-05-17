@@ -3,7 +3,7 @@
 //
 // Licensed under the MIT (MIT-LICENSE.txt) license.
 
-// +build linux
+// +build cgo_jemalloc
 
 package unsafe2
 
@@ -12,6 +12,8 @@ import (
 
 	jemalloc "github.com/spinlock/jemalloc-go"
 )
+
+const CGoSliceAllocator = "jemalloc"
 
 func cgo_malloc(n int) unsafe.Pointer {
 	return jemalloc.Malloc(n)
