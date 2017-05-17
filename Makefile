@@ -8,7 +8,7 @@ godeps:
 	@make --no-print-directory -C vendor/github.com/spinlock/jemalloc-go/
 
 install: godeps
-	go install ./unsafe2
+	go install -tags "cgo_jemalloc" ./unsafe2
 
 clean:
 
@@ -16,4 +16,4 @@ distclean: clean
 	@make --no-print-directory --quiet -C vendor/github.com/spinlock/jemalloc-go/ distclean
 
 gotest: godeps
-	go test ./unsafe2
+	go test -tags "cgo_jemalloc" ./unsafe2
