@@ -3,7 +3,7 @@
 //
 // Licensed under the MIT (MIT-LICENSE.txt) license.
 
-// +build cgo_jemalloc
+// +build linux
 
 package unsafe2
 
