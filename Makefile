@@ -7,6 +7,9 @@ build-all: godeps
 godeps:
 	@make --no-print-directory -C vendor/github.com/spinlock/jemalloc-go/
 
+install: godeps
+	go install ./...
+
 clean:
 
 distclean: clean
